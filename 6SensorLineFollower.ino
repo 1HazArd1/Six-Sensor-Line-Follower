@@ -14,16 +14,16 @@
 
 #define leftCenterSensor   19  //analog pin A5
 #define leftNearSensor     18  //analog pin A4
-#define leftFarSensor      17  //analog pin A3                          //change the pin for butn from 4 to 2 rightFarSensor to D3 and leftMotor1 to D4
+#define leftFarSensor      17  //analog pin A3                          //change the pin for butn from 4 to 3 and leftMotor1 to 5
 #define rightCenterSensor  20  //analog pin A6
 #define rightNearSensor    21  //analog pin A7
-#define rightFarSensor      2   //digital pin D2
+#define rightFarSensor      2  //digital pin D2
 #define Lleapsensor        16  //analog pin A2
 #define Rleapsensor        14  //analog pin A0
 #define Vin                15  //analog pin A1
 
 //Motor PWM pins
-#define leftMotor1    3  //forward pin
+#define leftMotor1    5  //forward pin
 #define leftMotor2    9
 #define rightMotor1  10  //forward pin
 #define rightMotor2  11
@@ -31,7 +31,7 @@
 //Other peripherals pins
 #define led  12
 #define buz   8
-#define butn  4
+#define butn  3
 
 short interval = 0; //For generelized Blink without delay function
 bool psensor[6]; //The Sensor Array
@@ -108,7 +108,7 @@ void setup()
   {
     if(digitalRead(butn)!=0)
     {
-      blink_without_delay(100);
+      blink_without_delay(500);
     }
     else
     {

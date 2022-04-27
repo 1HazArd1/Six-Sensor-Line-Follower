@@ -1,4 +1,4 @@
-//Advanced Line Follower Code (Basic version same as Maze solver ver. 12.0)
+//Advanced Line Follower Code 
 
 //Generalized Config
 //w=1, b=0 for white line on black board
